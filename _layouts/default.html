@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ page.title }} | {{ site.title }}</title>
+<link rel="stylesheet" href="assets/css/screen.css">
+<link rel="stylesheet" href="assets/css/genericons.css">
+</head>
+<body>
+{% include navigation.html %}
+<div class="navTarget">
+  {% include header.html %}
+  {{ content }}
+</div>
+</body>
+</html>

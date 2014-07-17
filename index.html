@@ -1,0 +1,31 @@
+---
+layout: default
+title: Home
+image: hero.jpg
+---
+
+<div class="contentBack" style="background-image:url('assets/images/{{ page.image }}')"></div>
+<div class="contentFront">
+  <div class="hero">
+    <div class="hero--container">
+      <div class="hero--texts">
+        <h1 class="hero--title">{{ site.title }}</h1>
+        <p class="hero--description">{{ site.description }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="contentMain">
+    <div class="contentMain--container">
+      <div class="postList">
+        {% for post in paginator.posts %}
+          <div>
+            <span class="post-date">{{ post.date | date_to_long_string }}</span>
+            <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+            <p class="post-description">{{ post.content | strip_html | truncatewords: 50 }}</p>
+            <p class="post-description">{{ post.content }}</p>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
