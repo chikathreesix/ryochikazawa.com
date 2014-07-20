@@ -1,0 +1,165 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 9, ../../../assets/_sass/screen.scss */
+body {
+  font-family: "Helvetica Neue";
+}
+
+/* line 13, ../../../assets/_sass/screen.scss */
+h1 {
+  font-size: 32px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+/* line 20, ../../../assets/_sass/screen.scss */
+header {
+  position: fixed;
+  z-index: 200;
+}
+
+/* line 25, ../../../assets/_sass/screen.scss */
+.menuBtn {
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  margin: 15px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+/* line 32, ../../../assets/_sass/screen.scss */
+.menuBtn .menuBtn--icon {
+  vertical-align: baseline;
+}
+
+/* line 37, ../../../assets/_sass/screen.scss */
+.navTarget {
+  position: relative;
+}
+
+/* line 43, ../../../assets/_sass/screen.scss */
+.contentBack {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  max-height: 400px;
+  background-position: center;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 53, ../../../assets/_sass/screen.scss */
+.contentFront {
+  position: relative;
+  z-index: 100;
+}
+
+/* line 58, ../../../assets/_sass/screen.scss */
+.hero {
+  width: 100%;
+  height: 400px;
+  display: table;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/* line 64, ../../../assets/_sass/screen.scss */
+.hero .hero--container {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 69, ../../../assets/_sass/screen.scss */
+.hero .hero--container .hero--texts {
+  color: white;
+  display: inline-block;
+}
+/* line 73, ../../../assets/_sass/screen.scss */
+.hero .hero--container .hero--texts .hero--title {
+  font-size: 48px;
+  font-weight: 700;
+}
+/* line 78, ../../../assets/_sass/screen.scss */
+.hero .hero--container .hero--texts .hero--description {
+  margin-top: 12px;
+  color: #eee;
+}
+
+/* line 86, ../../../assets/_sass/screen.scss */
+.contentMain {
+  background-color: white;
+}
+/* line 89, ../../../assets/_sass/screen.scss */
+.contentMain .contentMain--container {
+  padding: 40px 0;
+  width: 700px;
+  margin: 0 auto;
+}
