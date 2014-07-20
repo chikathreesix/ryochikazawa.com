@@ -4,7 +4,7 @@ title: Home
 image: hero.jpg
 ---
 
-<div class="contentBack" style="background-image:url('assets/images/{{ page.image }}')"></div>
+<div class="contentBack" style="background-image:url('{{ page.image | asset_path }}')"></div>
 <div class="contentFront">
   <div class="hero">
     <div class="hero--container">

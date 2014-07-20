@@ -3,5 +3,9 @@ description: JavaScript Samurai from Japan
 paginate: 5
 exclude: ['Gemfile*', 'Rakefile', 'README.md']
 
-gems:
-- jekyll-compass
+#gems:
+#- jekyll-compass
+
+assets:
+  js_compressor:  uglifier
+  css_compressor: sass
