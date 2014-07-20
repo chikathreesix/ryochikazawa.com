@@ -32,14 +32,17 @@ file GH_PAGES_REF => BUILD_DIR do
   end
 end
 
+desc "Prepare for build"
 task :prepare => GH_PAGES_REF
 
+desc "Build static files"
 task :build do
   cd PROJECT_ROOT do
     sh "bundle exec jekyll build --destination #{BUILD_DIR}"
   end
 end
 
+desc "Deploy static files to gh-pages branch"
 task :deploy => [:build] do
   message = nil
   suffix = ENV["COMMIT_MESSAGE_SUFFIX"]
