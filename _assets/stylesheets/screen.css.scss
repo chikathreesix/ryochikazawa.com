@@ -5,6 +5,7 @@
 
 @import "compass/reset";
 @import "compass/css3/background-size";
+@import "compass/css3/text-shadow";
 @import "drawer_menu";
 
 body{
@@ -58,6 +59,7 @@ header{
     .hero--texts{
       color: white;
       display: inline-block;
+      @include text-shadow(rgba(black, 0.5) 1px 1px 0);
 
       .hero--title{
         font-size: 48px;
