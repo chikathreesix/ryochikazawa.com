@@ -6,6 +6,7 @@ $drawer-width: 250px;
 
 #drawerMenu{
   overflow: hidden;
+  height: 100%;
 }
 
 #drawerNav{
@@ -24,6 +25,7 @@ $drawer-width: 250px;
   top: 0;
   left: 0;
   z-index: 200;
+  height: 100%;
 
   &.open{
     left: $drawer-width;
