@@ -6,10 +6,13 @@
 {% stylesheet genericons %}
 </head>
 <body>
-{% include navigation.html %}
-<div class="navTarget">
-  {% include header.html %}
-  {{ content }}
+<div id="drawerMenu">
+  {% include navigation.html %}
+  <div id="drawerTarget">
+    {% include header.html %}
+    {{ content }}
+  </div>
 </div>
+{% javascript app %}
 </body>
 </html>

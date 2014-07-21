@@ -1,0 +1,9 @@
+<nav id="drawerNav">
+  <ul class="menuList">
+    {% for nav in site.navigations %}
+      <li>
+        <a href="{{ nav.url }}">{{ nav.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

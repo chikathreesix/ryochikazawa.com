@@ -1,0 +1,56 @@
+/*--------------------------
+  Drawer Menu
+--------------------------*/
+
+$drawer-width: 250px;
+
+#drawerMenu{
+  overflow: hidden;
+}
+
+#drawerNav{
+  width: $drawer-width;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #222;
+  z-index: 100;
+  color: #ccc;
+}
+
+#drawerTarget{
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 200;
+
+  &.open{
+    left: $drawer-width;
+  }
+}
+
+.menuBtn{
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  margin: 15px;
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+
+  .menuBtn--icon{
+    vertical-align: baseline;
+  }
+}
+
+.menuList{
+  padding-top: 10px;
+
+  > li{
+    padding: 15px;
+
+    &:hover{
+      color: white;
+    }
+  }
+}

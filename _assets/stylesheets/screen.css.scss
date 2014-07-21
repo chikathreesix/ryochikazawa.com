@@ -5,9 +5,15 @@
 
 @import "compass/reset";
 @import "compass/css3/background-size";
+@import "drawer_menu";
 
 body{
   font-family: "Helvetica Neue";
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
 }
 
 h1{
@@ -21,23 +27,6 @@ header{
   position: fixed;
   z-index: 200;
 }
-
-.menuBtn{
-  color: white;
-  padding: 10px;
-  font-size: 20px;
-  margin: 15px;
-  background-color: rgba(0, 0, 0, 0.4);
-
-  .menuBtn--icon{
-    vertical-align: baseline;
-  }
-}
-
-.navTarget{
-  position: relative;
-}
-
 
 
 .contentBack{
