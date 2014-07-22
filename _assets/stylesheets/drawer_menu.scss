@@ -14,10 +14,14 @@ $drawer-width: 250px;
   height: 100%;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -$drawer-width;
   background-color: #222;
   z-index: 100;
   color: #ccc;
+
+  &.open{
+    left: 0;
+  }
 }
 
 #drawerTarget{

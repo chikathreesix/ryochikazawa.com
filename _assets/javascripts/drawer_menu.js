@@ -16,8 +16,10 @@
     function _onClick(e){
       if(_isOpen){
         _$target.removeClass('open');
+        _$nav.removeClass('open');
       }else{
         _$target.addClass('open');
+        _$nav.addClass('open');
       }
       _isOpen = !_isOpen;
     }
