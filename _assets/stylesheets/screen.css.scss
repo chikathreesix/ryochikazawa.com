@@ -7,15 +7,18 @@
 @import "compass/css3/background-size";
 @import "compass/css3/text-shadow";
 @import "drawer_menu";
+@import "compass/css3/box-sizing";
 
 body{
-  font-family: "Helvetica Neue";
-  line-height: 140%;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  line-height: 160%;
+  color: #111;
+  font-size: 16px;
 }
 
 a{
   text-decoration: none;
-  color: inherit;
+  color: #999;
 
   &:hover{
     text-decoration: underline;
@@ -27,6 +30,15 @@ h1{
   margin-top: 10px;
   margin-bottom: 15px;
   font-weight: 700;
+  color: black;
+
+  a{
+    color: black;
+  }
+}
+
+p{
+  margin-bottom: 25px;
 }
 
 header{
@@ -35,6 +47,8 @@ header{
 }
 
 $hero-height: 420px;
+$hero-height-small: 300px;
+$content-width: 700px;
 
 .contentBack{
   position: fixed;
@@ -54,30 +68,58 @@ $hero-height: 420px;
 
 .hero{
   width: 100%;
-  height: $hero-height;
-  display: table;
   background-color: rgba(0, 0, 0, 0.2);
+}
 
-  .hero--container{
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
+.hero--area{
+  display: table;
+  width: 100%;
+  max-width: $content-width;
+  height: $hero-height;
+  margin: 0 auto;
+}
 
-    .hero--texts{
-      color: white;
-      display: inline-block;
-      @include text-shadow(rgba(black, 0.5) 1px 1px 0);
+.hero--container{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
 
-      .hero--title{
-        font-size: 48px;
-        font-weight: 700;
-      }
+.hero--postContainer{
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 15px;
+}
 
-      .hero--description{
-        margin-top: 12px;
-        color: #eee;
-      }
-    }
+.hero--texts{
+  display: inline-block;
+  @include text-shadow(rgba(black, 0.5) 1px 1px 0);
+}
+
+.hero--title{
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 110%;
+}
+
+.hero--description{
+  margin-top: 12px;
+  color: #eee;
+}
+
+
+@media (max-width: 640px){
+  .contentBack{
+    height: $hero-height-small;
+  }
+
+  .hero--area{
+    height: $hero-height-small;
+  }
+
+  .hero--title{
+    font-size: 40px;
   }
 }
 
@@ -86,8 +128,14 @@ $hero-height: 420px;
   height: 100%;
 
   .contentMain--container{
-    padding: 40px 0;
-    width: 700px;
+    padding: 40px 15px;
+    width: 100%;
+    max-width: $content-width;
     margin: 0 auto;
+    @include box-sizing(border-box);
   }
+}
+
+.postList--date{
+  color: #aaa;
 }
