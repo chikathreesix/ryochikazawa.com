@@ -13,6 +13,8 @@ navigations:
 
 ga_id: UA-53136110-1
 
+env: development
+
 assets:
   js_compressor:  uglifier
   css_compressor: sass

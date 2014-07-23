@@ -38,7 +38,7 @@ task :prepare => GH_PAGES_REF
 desc "Build static files"
 task :build do
   cd PROJECT_ROOT do
-    sh "bundle exec jekyll build --destination #{BUILD_DIR}"
+    sh "bundle exec jekyll build --destination #{BUILD_DIR} --config _config.yml,_config_prod.yml"
   end
 end
 
