@@ -26,6 +26,9 @@
     </div>
   </div>
 </div>
+{% if site.ga_id %}
+  {% include ga.html %}
+{% endif %}
 {% javascript app %}
 </body>
 </html>

@@ -11,6 +11,8 @@ navigations:
   - title: Projects
     url: /projects
 
+ga_id: UA-53136110-1
+
 assets:
   js_compressor:  uglifier
   css_compressor: sass
