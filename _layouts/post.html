@@ -13,9 +13,10 @@
     {% include header.html %}
     <div class="contentBack" style="background-image:url('{{ page.image | asset_path }}')"></div>
     <div class="contentFront">
-      {% include hero_index.html %}
+      {% include hero_post.html %}
       <div class="contentMain">
         <div class="contentMain--container">
+          {% include social.html %}
           {{ content }}
         </div>
       </div>
