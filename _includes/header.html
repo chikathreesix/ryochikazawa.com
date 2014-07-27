@@ -1,5 +1,7 @@
 <header>
-  <div class="menuBtn" id="drawerButton">
-    <span class="menuBtn--icon genericon genericon-menu"></span>
-  </div>
+  {% if site.navigations %}
+    <div class="menuBtn" id="drawerButton">
+      <span class="menuBtn--icon genericon genericon-menu"></span>
+    </div>
+  {% endif %}
 </header>

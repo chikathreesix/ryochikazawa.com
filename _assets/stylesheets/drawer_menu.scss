@@ -37,7 +37,6 @@ $drawer-width: 250px;
 }
 
 .menuBtn{
-  display: none;
   color: white;
   padding: 10px;
   font-size: 20px;
@@ -56,8 +55,9 @@ $drawer-width: 250px;
   > li{
     padding: 15px;
 
-    &:hover{
+    a:hover{
       color: white;
+      text-decoration: none;
     }
   }
 }

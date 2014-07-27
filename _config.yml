@@ -5,11 +5,15 @@ exclude: ['Gemfile*', 'Rakefile', 'README.md', 'build']
 
 navigations:
   - title: About
-    url: /about
-  - title: Articles
-    url: /articles
+    url: /about.html
   - title: Projects
-    url: /projects
+    url: /projects.html
+  - title: Japanese blog
+    url: http://chikathreesix.com
+
+social_links:
+  twitter: https://twitter.com/chikathreesix
+  github: https://github.com/chikathreesix
 
 ga_id: UA-53136110-1
 
