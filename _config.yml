@@ -4,6 +4,8 @@ paginate: 5
 exclude: ['Gemfile*', 'Rakefile', 'README.md', 'build']
 
 navigations:
+  - title: Top
+    url: /
   - title: About
     url: /about.html
   - title: Projects
