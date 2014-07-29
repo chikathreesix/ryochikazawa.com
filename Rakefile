@@ -35,6 +35,11 @@ end
 desc "Prepare for build"
 task :prepare => GH_PAGES_REF
 
+desc "Watch"
+task :watch do
+  sh "bundle exec jekyll serve --watch"
+end
+
 desc "Build static files"
 task :build do
   cd PROJECT_ROOT do
