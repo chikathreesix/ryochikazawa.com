@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RyoChikazawa.com</title>
+    <description>JavaScript Samurai from Japan</description>    
+    <link>http://ryochikazawa.com</link>
+    <atom:link href="http://ryochikazawa.com/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>Starting English blog</title>
+        <description>&lt;p&gt;I'm Ryo Chikazawa, software engineer from Tokyo, Japan and currently based in Singapore. I write mainly JavaScript and also Ruby, sometimes Objective-C. My favorite editor is MacVim. I'm also a guitarist and a heavy metal lover.&lt;/p&gt;
+
+&lt;p&gt;You can find me on &lt;a href=&quot;https://github.com/chikathreesix&quot;&gt;Github&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/chikathreesix&quot;&gt;Twitter&lt;/a&gt;, &lt;a href=&quot;https://www.facebook.com/ryo.chikazawa&quot;&gt;facebook&lt;/a&gt; and &lt;a href=&quot;https://www.linkedin.com/pub/ryo-chikazawa/49/337/15&quot;&gt;LinkedIn&lt;/a&gt;. You can also &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#099;&amp;#104;&amp;#105;&amp;#107;&amp;#097;&amp;#116;&amp;#104;&amp;#114;&amp;#101;&amp;#101;&amp;#115;&amp;#105;&amp;#120;&amp;#064;&amp;#103;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;email&lt;/a&gt; me for more inquiries. Basically I use &lt;code&gt;chikathreesix&lt;/code&gt; as a nickname through a lot of services.&lt;/p&gt;
+
+&lt;p&gt;Originaly I have &lt;a href=&quot;http://chikathreesix.com&quot;&gt;my Japanese blog&lt;/a&gt;, but since I moved to Singapore, I thought I should have English one too. The Japanese blog is built by Wordpress and hosted on a hosting server, however, I felt it's a little bit obsolete. I didn't want to look for a new server and install something on it again. And also I wanted to write posts in markdown. So what I did is, I built this blog with Jekyll and it is hosted on Github Pages. I'd like to write about this in another post anyway.&lt;/p&gt;
+
+&lt;p&gt;I will write about mainly HTML5, JavaScript and Ruby in this blog. If you have any comments, feel free to send me a metion on Twitter.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 21 Jul 2014 00:00:00 +0800</pubDate>
+        <link>http://ryochikazawa.com/2014/07/21/starting-english-blog.html</link>
+        <guid isPermaLink="true">http://ryochikazawa.com/2014/07/21/starting-english-blog.html</guid>
+      </item>
+    
+  </channel>
+</rss>
