@@ -1,5 +1,11 @@
 title: Ryo Chikazawa
 description: JavaScript Samurai from Japan
+
+#for feed.xml
+name: RyoChikazawa.com
+description: JavaScript Samurai from Japan
+url: http://ryochikazawa.com
+
 paginate: 5
 exclude: ['Gemfile*', 'Rakefile', 'README.md', 'build']
 
