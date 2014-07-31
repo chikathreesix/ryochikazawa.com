@@ -39,14 +39,12 @@ $drawer-width: 250px;
 .menuBtn{
   color: white;
   padding: 10px;
-  font-size: 20px;
   margin: 15px;
   background-color: rgba(0, 0, 0, 0.4);
   cursor: pointer;
-
-  .menuBtn--icon{
-    vertical-align: baseline;
-  }
+  width: 18px;
+  height: 18px;
+  text-align: center;
 }
 
 .menuList{
