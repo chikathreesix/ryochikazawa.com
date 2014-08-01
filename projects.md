@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: default
+type: page
 title: Projects
 image: samurai.jpg
 ---

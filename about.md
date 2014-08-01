@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: default
+type: page
 title: About
 image: samurai.jpg
 ---

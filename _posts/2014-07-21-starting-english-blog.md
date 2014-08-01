@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: default
+type: post
 title: Starting English blog
 image: tokyo.jpg
 ---
