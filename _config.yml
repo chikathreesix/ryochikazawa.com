@@ -19,9 +19,13 @@ navigations:
   - title: Japanese blog
     url: http://chikathreesix.com
 
-social_links:
-  twitter: https://twitter.com/chikathreesix
-  github: https://github.com/chikathreesix
+socials:
+  twitter:
+    name: chikathreesix
+    url: https://twitter.com/chikathreesix
+  github:
+    name: chikathreesix
+    url: https://github.com/chikathreesix
 
 ga_id: UA-53136110-1
 
