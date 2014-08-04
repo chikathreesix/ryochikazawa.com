@@ -4,6 +4,19 @@
       <div class="hero--texts">
         <h1 class="hero--title">{{ site.title }}</h1>
         <h2 class="hero--description">{{ site.description }}</h2>
+        {% if site.socials %}
+          <ul class="socialNav">
+          {% for social in site.socials %}
+            <a class="socialNav--link" href="{{ social[1].url }}" target="_blank">
+            {% if social[0] == "twitter" %}
+              <span class="genericon genericon-twitter"></span>
+            {% elsif social[0] == "github" %}
+              <span class="genericon genericon-github"></span>
+            {% endif %}
+            </a>
+          {% endfor %}
+          </ul>
+        {% endif %}
       </div>
     </div>
   </div>
