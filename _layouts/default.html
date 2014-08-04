@@ -8,14 +8,14 @@
 <meta property="og:title" content="{{ page.title }} | {{ site.title }}">
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description}}{% endif %}">
-<meta property="og:image" content="{{ page.image }}">
+<meta property="og:image" content="{{ site.url }}{{ page.image  | asset_path }}">
 
 <meta name="twitter:card" content="summary_large_image">
 {% if site.socials.twitter %}<meta name="twitter:site" content="@{{ site.socials.twitter.name }}">{% endif %}
 {% if page.author.twitter %}<meta name="twitter:creator" content="@{{ page.author.twitter }}">{% endif %}
 <meta name="twitter:title" content="{{ page.title }} | {{ site.title }}">
 <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description}}{% endif %}">
-<meta name="twitter:image:src" content="{{ page.image }}">
+<meta name="twitter:image:src" content="{{ site.url }}{{ page.image  | asset_path }}">
 </head>
 <body>
 <div id="drawerMenu">
