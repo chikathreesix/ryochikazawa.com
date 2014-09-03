@@ -7,6 +7,77 @@
     <atom:link href="http://ryochikazawa.com/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Blogging with Github and Jekyll</title>
+        <description>&lt;p&gt;Before I created this blog, I had been thinking about the best way for me to create a blog. I have my &lt;a href=&quot;http://chikathreesix.com&quot;&gt;Japanese blog&lt;/a&gt;, which is created by Wordpress and hosted on a hosting server, however, I felt that is a little bit obsolete and didn't want to follow this way again.&lt;/p&gt;
+
+&lt;p&gt;Anyway, I had two requirements for this blog which can't be accomplished with Wordpress and hosting server.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Write a blog by Markdown&lt;/li&gt;
+  &lt;li&gt;Easy to customize&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;creating-repository&quot;&gt;Creating repository&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;username.github.io&lt;/code&gt; or &lt;code&gt;gh-pages&lt;/code&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;installing&quot;&gt;Installing&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ruby&lt;/li&gt;
+  &lt;li&gt;Jekyll&lt;/li&gt;
+  &lt;li&gt;Bundler&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;setting-up&quot;&gt;Setting up&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Gemfile&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;_config.yml&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;bundle install&lt;/li&gt;
+  &lt;li&gt;index.html&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;serve&quot;&gt;Serve&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;jekyll serve --watch&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;http://localhost:4000&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;front-matters&quot;&gt;Front Matters&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Add &lt;code&gt;---&lt;/code&gt; then Jekyll will process this as a special file&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Use parameters
+&lt;code&gt;
+---
+title: Awesome Page
+---
+&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;show title
+&lt;code&gt;
+Blogging with Github and Jekyll
+&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Add parameters in &lt;code&gt;_config.yml&lt;/code&gt;
+&lt;code&gt;
+Ryo Chikazawa
+&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;wriging-posts&quot;&gt;Wriging posts&lt;/h1&gt;
+</description>
+        <pubDate>Mon, 01 Sep 2014 00:00:00 +0800</pubDate>
+        <link>http://ryochikazawa.com/2014/09/01/blogging-with-github-and-jekyll.html</link>
+        <guid isPermaLink="true">http://ryochikazawa.com/2014/09/01/blogging-with-github-and-jekyll.html</guid>
+      </item>
+    
+      <item>
         <title>Starting English blog</title>
         <description>&lt;p&gt;I'm Ryo Chikazawa, software engineer from Tokyo, Japan and currently based in Singapore. I write mainly JavaScript and also Ruby, sometimes Objective-C. My favorite editor is MacVim. I'm also a guitarist and a heavy metal lover.&lt;/p&gt;
 

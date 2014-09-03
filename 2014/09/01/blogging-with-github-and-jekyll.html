@@ -2,10 +2,10 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Starting English blog | Ryo Chikazawa</title>
+<title>Blogging with Github and Jekyll | Ryo Chikazawa</title>
 <link rel="stylesheet" href="/assets/screen-e9a5d2639023ef0e932023d2aaf3bd44.css">
 <link rel="stylesheet" href="/assets/genericons-0244130fd8384bc64dec431c2901e082.css">
-<meta property="og:title" content="Starting English blog | Ryo Chikazawa">
+<meta property="og:title" content="Blogging with Github and Jekyll | Ryo Chikazawa">
 <meta property="og:site_name" content="Ryo Chikazawa">
 <meta property="og:description" content="JavaScript Samurai from Japan">
 <meta property="og:image" content="http://ryochikazawa.com/assets/tokyo-1d990e4692e5d2b84d5e1e22e07e0c7d.jpg">
@@ -14,7 +14,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@chikathreesix">
 
-<meta name="twitter:title" content="Starting English blog | Ryo Chikazawa">
+<meta name="twitter:title" content="Blogging with Github and Jekyll | Ryo Chikazawa">
 <meta name="twitter:description" content="JavaScript Samurai from Japan">
 <meta name="twitter:image:src" content="http://ryochikazawa.com/assets/tokyo-1d990e4692e5d2b84d5e1e22e07e0c7d.jpg">
 </head>
@@ -58,7 +58,7 @@
   <div class="hero--area">
     <div class="hero--postContainer">
       <div class="hero--texts">
-        <h1 class="hero--title">Starting English blog</h1>
+        <h1 class="hero--title">Blogging with Github and Jekyll</h1>
         
       </div>
     </div>
@@ -72,13 +72,69 @@
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 </div>
 
-    <p>I'm Ryo Chikazawa, software engineer from Tokyo, Japan and currently based in Singapore. I write mainly JavaScript and also Ruby, sometimes Objective-C. My favorite editor is MacVim. I'm also a guitarist and a heavy metal lover.</p>
+    <p>Before I created this blog, I had been thinking about the best way for me to create a blog. I have my <a href="http://chikathreesix.com">Japanese blog</a>, which is created by Wordpress and hosted on a hosting server, however, I felt that is a little bit obsolete and didn't want to follow this way again.</p>
 
-<p>You can find me on <a href="https://github.com/chikathreesix">Github</a>, <a href="https://twitter.com/chikathreesix">Twitter</a>, <a href="https://www.facebook.com/ryo.chikazawa">facebook</a> and <a href="https://www.linkedin.com/pub/ryo-chikazawa/49/337/15">LinkedIn</a>. You can also <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#099;&#104;&#105;&#107;&#097;&#116;&#104;&#114;&#101;&#101;&#115;&#105;&#120;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">email</a> me for more inquiries. Basically I use <code>chikathreesix</code> as a nickname through a lot of services.</p>
+<p>Anyway, I had two requirements for this blog which can't be accomplished with Wordpress and hosting server.</p>
 
-<p>Originaly I have <a href="http://chikathreesix.com">my Japanese blog</a>, but since I moved to Singapore, I thought I should have English one too. The Japanese blog is built by Wordpress and hosted on a hosting server, however, I felt it's a little bit obsolete. I didn't want to look for a new server and install something on it again. And also I wanted to write posts in markdown. So what I did is, I built this blog with Jekyll and it is hosted on Github Pages. I'd like to write about this in another post anyway.</p>
+<ul>
+  <li>Write a blog by Markdown</li>
+  <li>Easy to customize</li>
+</ul>
 
-<p>I will write about mainly HTML5, JavaScript and Ruby in this blog. If you have any comments, feel free to send me a metion on Twitter.</p>
+<h1 id="creating-repository">Creating repository</h1>
+<p><code>username.github.io</code> or <code>gh-pages</code></p>
+
+<h1 id="installing">Installing</h1>
+
+<ul>
+  <li>Ruby</li>
+  <li>Jekyll</li>
+  <li>Bundler</li>
+</ul>
+
+<h1 id="setting-up">Setting up</h1>
+
+<ul>
+  <li>Gemfile</li>
+  <li><code>_config.yml</code></li>
+  <li>bundle install</li>
+  <li>index.html</li>
+</ul>
+
+<h1 id="serve">Serve</h1>
+<ul>
+  <li><code>jekyll serve --watch</code></li>
+  <li>http://localhost:4000</li>
+</ul>
+
+<h1 id="front-matters">Front Matters</h1>
+<ul>
+  <li>
+    <p>Add <code>---</code> then Jekyll will process this as a special file</p>
+  </li>
+  <li>
+    <p>Use parameters
+<code>
+---
+title: Awesome Page
+---
+</code></p>
+  </li>
+  <li>
+    <p>show title
+<code>
+Blogging with Github and Jekyll
+</code></p>
+  </li>
+  <li>
+    <p>Add parameters in <code>_config.yml</code>
+<code>
+Ryo Chikazawa
+</code></p>
+  </li>
+</ul>
+
+<h1 id="wriging-posts">Wriging posts</h1>
 
     <div id="disqus_thread"></div>
 <script type="text/javascript">
