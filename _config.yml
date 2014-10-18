@@ -16,6 +16,8 @@ navigations:
     url: /about.html
   - title: Projects
     url: /projects.html
+  - title: Slides
+    url: /slides.html
   - title: Japanese blog
     url: http://chikathreesix.com
 
