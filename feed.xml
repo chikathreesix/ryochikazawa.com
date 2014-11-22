@@ -7,6 +7,27 @@
     <atom:link href="http://ryochikazawa.com/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Had a talk at geekcampsg 2014</title>
+        <description>&lt;p&gt;I had a talk in geekcampsg 2014 last month. Geekcampsg is a yearly event for geeks and all talks are supposed to be related to any geeky stuff. I think there were about 200 - 300 attendees and talks had a lot of varieties from software to hardware.&lt;/p&gt;
+
+&lt;p&gt;In my talk, I introduced ES6, which I am currently using. Here is the slides. Click the slide and use arrow keys to navigate.&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;300&quot; src=&quot;http://ryochikazawa.com/slides/es6-the-future-of-javascript.html&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;And also you can check the video here.&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/TZ8VVEQEQ0M&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;By the way, because I wanted to write the slides with markdown and also build it with ES6, I built the presentation framework from scratch. &lt;/p&gt;
+
+&lt;p&gt;This is called &lt;a href=&quot;https://github.com/chikathreesix/harmonide&quot;&gt;Harmonide&lt;/a&gt;. You can also run a javascript code in the slides as you can see in the slide or the video above. It is with MIT license so feel free to use, fork and also like it!&lt;/p&gt;
+</description>
+        <pubDate>Tue, 18 Nov 2014 00:00:00 +0800</pubDate>
+        <link>http://ryochikazawa.com/2014/11/18/had-a-talk-in-geekcampsg.html</link>
+        <guid isPermaLink="true">http://ryochikazawa.com/2014/11/18/had-a-talk-in-geekcampsg.html</guid>
+      </item>
+    
+      <item>
         <title>Starting English blog</title>
         <description>&lt;p&gt;I&#39;m Ryo Chikazawa, software engineer from Tokyo, Japan and currently based in Singapore. I write mainly JavaScript and also Ruby, sometimes Objective-C. My favorite editor is MacVim. I&#39;m also a guitarist and a heavy metal lover.&lt;/p&gt;
 
