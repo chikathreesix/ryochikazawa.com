@@ -8,7 +8,9 @@
 <meta property="og:title" content="{{ page.title }} | {{ site.title }}">
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description}}{% endif %}">
+{% if page.image %}
 <meta property="og:image" content="{{ site.url }}{{ page.image  | asset_path }}">
+{% endif %}
 <link rel="alternate" type="application/atom+xml" title="ryochikazawa.com" href="/feed.xml">
 
 <meta name="twitter:card" content="summary_large_image">
@@ -16,14 +18,20 @@
 {% if page.author.twitter %}<meta name="twitter:creator" content="@{{ page.author.twitter }}">{% endif %}
 <meta name="twitter:title" content="{{ page.title }} | {{ site.title }}">
 <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description}}{% endif %}">
+{% if page.image %}
 <meta name="twitter:image:src" content="{{ site.url }}{{ page.image  | asset_path }}">
+{% endif %}
 </head>
 <body>
 <div id="drawerMenu">
   {% include navigation.html %}
   <div id="drawerTarget">
     {% include header.html %}
+    {% if page.image %}
     <div class="contentBack" style="background-image:url('{{ page.image | asset_path }}')"></div>
+    {% else %}
+    <div class="contentBack"></div>
+    {% endif %}
     <div class="contentFront">
       {% if page.type == "page" %}
         {% include type/page.html content=content %}

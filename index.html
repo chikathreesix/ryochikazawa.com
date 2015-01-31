@@ -7,7 +7,7 @@ image: samurai.jpg
 
 <div class="postList">
   {% for post in paginator.posts %}
-    <div>
+    <div class="post">
       <span class="postList--date">{{ post.date | date_to_long_string }}</span>
       <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
       <p class="postList--desc">{{ post.content | strip_html | truncatewords: 50 }}</p>

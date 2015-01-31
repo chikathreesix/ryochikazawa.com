@@ -8,6 +8,7 @@
 @import "compass/css3/text-shadow";
 @import "compass/css3/box-sizing";
 @import "drawer_menu";
+@import "syntax";
 
 body{
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -29,11 +30,16 @@ h1{
   font-size: 32px;
   margin-top: 10px;
   margin-bottom: 20px;
-  font-weight: 700;
+  font-weight: bold;
   color: black;
+  line-height: 100%;
 
   a{
     color: black;
+    &:hover{
+      color: #666;
+      text-decoration: none;
+    }
   }
 }
 
@@ -41,10 +47,35 @@ h2{
   font-size: 24px;
   margin-top: 5px;
   margin-bottom: 15px;
+  font-weight: bold;
 }
 
+h3{
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+code{
+  background-color: rgba(0,0,0,0.04);
+  font-size: 85%;
+  padding: 0.2em;
+}
+
+.highlight code{
+  display: block;
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+  margin-bottom: 16px;
+}
+
+
 p{
-  margin-bottom: 25px;
+  margin-bottom: 16px;
 }
 
 ul{
@@ -69,7 +100,7 @@ $content-width: 700px;
   height: 100%;
   max-height: $hero-height;
   background-position: center;
-  background-color: black;
+  background-color: #444;
   @include background-size(cover);
 }
 
@@ -168,6 +199,10 @@ $content-width: 700px;
     margin: 0 auto;
     @include box-sizing(border-box);
   }
+}
+
+.post{
+  margin-bottom: 40px;
 }
 
 .postList--date{
