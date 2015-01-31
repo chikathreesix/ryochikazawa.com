@@ -7,6 +7,42 @@
     <atom:link href="http://ryochikazawa.com/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Deploy Rails app with browserify-rails to Heroku</title>
+        <description>&lt;p&gt;I am building Rails 4.x app that runs on Heroku. And I recently added browserify-rails to the app then I got an error below while deploying it to Heroku.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;BrowserifyRails::BrowserifyError: browserify could not be found at /tmp/build_7afd0a3da809f3510421bfa4737d3bf8/./node_modules/.bin/browserify. Please run npm install.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;I&#39;ve tried a lot of thing and finally found the solution. Here is the process for solving this issue.&lt;/p&gt;
+
+&lt;h3 id=&quot;configure-heroku-to-use-multi-buildpack&quot;&gt;Configure Heroku to use multi-buildpack&lt;/h3&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;heroku config:add &lt;span class=&quot;nv&quot;&gt;BUILDPACK_URL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;https://github.com/ddollar/heroku-buildpack-multi.git&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;create-buildpacks-file&quot;&gt;Create &lt;code&gt;.buildpacks&lt;/code&gt; file&lt;/h3&gt;
+&lt;p&gt;Create &lt;code&gt;.buildpack&lt;/code&gt; file for the multi-buildpack to make sure node.js is compiled before ruby.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;https://github.com/heroku/heroku-buildpack-nodejs
+https://github.com/heroku/heroku-buildpack-ruby&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;install-browserify-with---save&quot;&gt;Install browserify with &lt;code&gt;--save&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;rake assets:precompile&lt;/code&gt; in heroku deploy expects &lt;code&gt;browserify&lt;/code&gt; to be installed in &lt;code&gt;.node_modules&lt;/code&gt; directory. So move it from &lt;code&gt;devDependencies&lt;/code&gt; to &lt;code&gt;dependencies&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;npm uninstall browserify --save-dev
+npm install browserify --save&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now try to deploy again!&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;git push heroku master&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;It should work now.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 30 Jan 2015 00:00:00 +0800</pubDate>
+        <link>http://ryochikazawa.com/2015/01/30/heroku-with-browserify-rails.html</link>
+        <guid isPermaLink="true">http://ryochikazawa.com/2015/01/30/heroku-with-browserify-rails.html</guid>
+      </item>
+    
+      <item>
         <title>Had a talk at geekcampsg 2014</title>
         <description>&lt;p&gt;I had a talk in geekcampsg 2014 last month. Geekcampsg is a yearly event for geeks and all talks are supposed to be related to any geeky stuff. I think there were about 200 - 300 attendees and talks had a lot of varieties from software to hardware.&lt;/p&gt;
 

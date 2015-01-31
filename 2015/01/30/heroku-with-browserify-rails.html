@@ -2,24 +2,20 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Starting English blog | Ryo Chikazawa</title>
+<title>Deploy Rails app with browserify-rails to Heroku | Ryo Chikazawa</title>
 <link rel="stylesheet" href="/assets/screen-0cb607f95db5cac06ca402f232568567.css">
 <link rel="stylesheet" href="/assets/genericons-0244130fd8384bc64dec431c2901e082.css">
-<meta property="og:title" content="Starting English blog | Ryo Chikazawa">
+<meta property="og:title" content="Deploy Rails app with browserify-rails to Heroku | Ryo Chikazawa">
 <meta property="og:site_name" content="Ryo Chikazawa">
 <meta property="og:description" content="JavaScript Samurai from Japan">
-
-<meta property="og:image" content="http://ryochikazawa.com/assets/tokyo-1d990e4692e5d2b84d5e1e22e07e0c7d.jpg">
 
 <link rel="alternate" type="application/atom+xml" title="ryochikazawa.com" href="/feed.xml">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@chikathreesix">
 
-<meta name="twitter:title" content="Starting English blog | Ryo Chikazawa">
+<meta name="twitter:title" content="Deploy Rails app with browserify-rails to Heroku | Ryo Chikazawa">
 <meta name="twitter:description" content="JavaScript Samurai from Japan">
-
-<meta name="twitter:image:src" content="http://ryochikazawa.com/assets/tokyo-1d990e4692e5d2b84d5e1e22e07e0c7d.jpg">
 
 </head>
 <body>
@@ -60,7 +56,7 @@
 </header>
 
     
-    <div class="contentBack" style="background-image:url('/assets/tokyo-1d990e4692e5d2b84d5e1e22e07e0c7d.jpg')"></div>
+    <div class="contentBack"></div>
     
     <div class="contentFront">
       
@@ -68,7 +64,7 @@
   <div class="hero--area">
     <div class="hero--postContainer">
       <div class="hero--texts">
-        <h1 class="hero--title">Starting English blog</h1>
+        <h1 class="hero--title">Deploy Rails app with browserify-rails to Heroku</h1>
         
       </div>
     </div>
@@ -82,13 +78,34 @@
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 </div>
 
-    <p>I'm Ryo Chikazawa, software engineer from Tokyo, Japan and currently based in Singapore. I write mainly JavaScript and also Ruby, sometimes Objective-C. My favorite editor is MacVim. I'm also a guitarist and a heavy metal lover.</p>
+    <p>I am building Rails 4.x app that runs on Heroku. And I recently added browserify-rails to the app then I got an error below while deploying it to Heroku.</p>
 
-<p>You can find me on <a href="https://github.com/chikathreesix">Github</a>, <a href="https://twitter.com/chikathreesix">Twitter</a>, <a href="https://www.facebook.com/ryo.chikazawa">facebook</a> and <a href="https://www.linkedin.com/pub/ryo-chikazawa/49/337/15">LinkedIn</a>. You can also <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#099;&#104;&#105;&#107;&#097;&#116;&#104;&#114;&#101;&#101;&#115;&#105;&#120;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">email</a> me for more inquiries. Basically I use <code>chikathreesix</code> as a nickname through a lot of services.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">BrowserifyRails::BrowserifyError: browserify could not be found at /tmp/build_7afd0a3da809f3510421bfa4737d3bf8/./node_modules/.bin/browserify. Please run npm install.</code></pre></div>
 
-<p>Originaly I have <a href="http://chikathreesix.com">my Japanese blog</a>, but since I moved to Singapore, I thought I should have English one too. The Japanese blog is built by Wordpress and hosted on a hosting server, however, I felt it's a little bit obsolete. I didn't want to look for a new server and install something on it again. And also I wanted to write posts in markdown. So what I did is, I built this blog with Jekyll and it is hosted on Github Pages. I'd like to write about this in another post anyway.</p>
+<p>I've tried a lot of thing and finally found the solution. Here is the process for solving this issue.</p>
 
-<p>I will write about mainly HTML5, JavaScript and Ruby in this blog. If you have any comments, feel free to send me a metion on Twitter.</p>
+<h3 id="configure-heroku-to-use-multi-buildpack">Configure Heroku to use multi-buildpack</h3>
+
+<div class="highlight"><pre><code class="language-sh" data-lang="sh">heroku config:add <span class="nv">BUILDPACK_URL</span><span class="o">=</span>https://github.com/ddollar/heroku-buildpack-multi.git</code></pre></div>
+
+<h3 id="create-buildpacks-file">Create <code>.buildpacks</code> file</h3>
+<p>Create <code>.buildpack</code> file for the multi-buildpack to make sure node.js is compiled before ruby.</p>
+
+<div class="highlight"><pre><code class="language-text" data-lang="text">https://github.com/heroku/heroku-buildpack-nodejs
+https://github.com/heroku/heroku-buildpack-ruby</code></pre></div>
+
+<h3 id="install-browserify-with---save">Install browserify with <code>--save</code></h3>
+
+<p><code>rake assets:precompile</code> in heroku deploy expects <code>browserify</code> to be installed in <code>.node_modules</code> directory. So move it from <code>devDependencies</code> to <code>dependencies</code>.</p>
+
+<div class="highlight"><pre><code class="language-sh" data-lang="sh">npm uninstall browserify --save-dev
+npm install browserify --save</code></pre></div>
+
+<p>Now try to deploy again!</p>
+
+<div class="highlight"><pre><code class="language-sh" data-lang="sh">git push heroku master</code></pre></div>
+
+<p>It should work now.</p>
 
     <div id="disqus_thread"></div>
 <script type="text/javascript">
