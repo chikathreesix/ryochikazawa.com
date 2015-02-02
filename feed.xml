@@ -19,7 +19,7 @@
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;heroku config:add &lt;span class=&quot;nv&quot;&gt;BUILDPACK_URL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;https://github.com/ddollar/heroku-buildpack-multi.git&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;create-buildpacks-file&quot;&gt;Create &lt;code&gt;.buildpacks&lt;/code&gt; file&lt;/h3&gt;
-&lt;p&gt;Create &lt;code&gt;.buildpack&lt;/code&gt; file for the multi-buildpack to make sure node.js is compiled before ruby.&lt;/p&gt;
+&lt;p&gt;Create &lt;code&gt;.buildpacks&lt;/code&gt; file for the multi-buildpack to make sure node.js is compiled before ruby.&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;https://github.com/heroku/heroku-buildpack-nodejs
 https://github.com/heroku/heroku-buildpack-ruby&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;

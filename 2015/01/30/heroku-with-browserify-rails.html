@@ -89,7 +89,7 @@
 <div class="highlight"><pre><code class="language-sh" data-lang="sh">heroku config:add <span class="nv">BUILDPACK_URL</span><span class="o">=</span>https://github.com/ddollar/heroku-buildpack-multi.git</code></pre></div>
 
 <h3 id="create-buildpacks-file">Create <code>.buildpacks</code> file</h3>
-<p>Create <code>.buildpack</code> file for the multi-buildpack to make sure node.js is compiled before ruby.</p>
+<p>Create <code>.buildpacks</code> file for the multi-buildpack to make sure node.js is compiled before ruby.</p>
 
 <div class="highlight"><pre><code class="language-text" data-lang="text">https://github.com/heroku/heroku-buildpack-nodejs
 https://github.com/heroku/heroku-buildpack-ruby</code></pre></div>
