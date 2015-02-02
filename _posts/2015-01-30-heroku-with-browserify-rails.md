@@ -18,7 +18,7 @@ heroku config:add BUILDPACK_URL=https://github.com/ddollar/heroku-buildpack-mult
 {% endhighlight %}
 
 ### Create `.buildpacks` file
-Create `.buildpack` file for the multi-buildpack to make sure node.js is compiled before ruby.
+Create `.buildpacks` file for the multi-buildpack to make sure node.js is compiled before ruby.
 
 {% highlight text %}
 https://github.com/heroku/heroku-buildpack-nodejs
