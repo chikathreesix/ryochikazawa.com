@@ -1,0 +1,640 @@
+<!DOCTYPE>
+<html>
+<head>
+  <link rel="stylesheet" href="assets/harmonide.css">
+  <link rel="stylesheet" href="assets/exe.css">
+  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/default.min.css">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+  
+</head>
+<body>
+  <div id="presentation" class="slide_container">
+    
+      <section class=" type-title" style=" background-color:#212121; color:#67daf9;">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="introduction-to-react">Introduction to React</h1>
+
+          </div>
+        </div>
+      </section>
+    
+      <section class="" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="who-am-i">Who am I</h1>
+<ul>
+<li>Ryo Chikazawa</li>
+<li>Works at Viki</li>
+<li>@chikathreesix <a href="https://twitter.com/chikathreesix">twitter</a>, <a href="https://github.com/chikathreesix">github</a></li>
+<li><a href="http://harmonide.com/">Harmonide</a></li>
+</ul>
+
+          </div>
+        </div>
+      </section>
+    
+      <section class=" type-title" style=" background-color:#212121; color:#67daf9;">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="-img-src-assets-react_logo-png-width-100-height-100-style-vertical-align-middle-react"><img src="assets/react_logo.png" width="100" height="100" style="vertical-align: middle"> React</h1>
+
+          </div>
+        </div>
+      </section>
+    
+      <section class="" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="what-is-react-">What is React?</h1>
+<ul>
+<li>Library for UI</li>
+<li>Built by Facebook</li>
+<li>Used at Facebook, Instagram, etc...</li>
+<li>Mainly for Web</li>
+</ul>
+
+          </div>
+        </div>
+      </section>
+    
+      <section class="" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="react">React</h1>
+<p><img src="assets/react_screen.png" width="100%"></p>
+
+          </div>
+        </div>
+      </section>
+    
+      <section class="" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="react">React</h1>
+<ul>
+<li>Just the UI</li>
+<li>Virtual DOM</li>
+<li>Data flow</li>
+</ul>
+
+          </div>
+        </div>
+      </section>
+    
+      <section class=" type-title" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="just-the-ui">Just the UI</h1>
+
+          </div>
+        </div>
+      </section>
+    
+      <section class="" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="just-the-ui">Just the UI</h1>
+<ul class="sequence">
+  <li>No Controller</li>
+  <li>No Model</li>
+  <li>No View Model</li>
+  <li>No 2-way data binding</li>
+  <li>No Directives</li>
+</ul>
+
+
+
+          </div>
+        </div>
+      </section>
+    
+      <section class="" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <p><img src="assets/react_has_nothing.jpg" width="100%"></p>
+
+          </div>
+        </div>
+      </section>
+    
+      <section class="" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <p><img src="assets/just_simple_component.jpg" width="100%"></p>
+
+          </div>
+        </div>
+      </section>
+    
+      <section class="" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="react-component">React Component</h1>
+<pre><code class="hljs hljs">var Hello = React.createClass({
+  render() {
+    return &lt;div&gt;Hello {this.props.target}&lt;/div&gt;;
+  }
+});
+
+React.render(&lt;Hello target="World" /&gt;, document.body);</code></pre><div class="sequence">
+  <div></div>
+  <div>
+    <div style="width: 410px; height: 30px; border: 3px solid red; top: 175px; left: 121px; position: absolute;"></div>
+    <div style="width: 270px; height: 30px; border: 3px solid red; top: 280px; left: 145px; position: absolute;"></div>
+  </div>
+</div>
+
+
+
+          </div>
+        </div>
+      </section>
+    
+      <section class="" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="jsx">JSX</h1>
+<ul>
+<li>Compile JSX to JS</li>
+<li>XML like extension to ECMAScript</li>
+<li>Optional</li>
+</ul>
+
+          </div>
+        </div>
+      </section>
+    
+      <section class="" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="compile-jsx">Compile JSX</h1>
+<ul>
+<li>Dynamic compile with JSXTransformer.js</li>
+<li>Precompile with react-tools</li>
+</ul>
+
+          </div>
+        </div>
+      </section>
+    
+      <section class="" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="jsxtransformer-js">JSXTransformer.js</h1>
+<pre><code class="hljs html">&lt;html&gt;
+  &lt;head&gt;
+    &lt;script src="build/react.js"&gt;&lt;/script&gt;
+    &lt;script src="build/JSXTransformer.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id="example"&gt;&lt;/div&gt;
+    &lt;script type="text/jsx"&gt;
+      React.render(
+        &lt;h1&gt;Hello, world!&lt;/h1&gt;,
+        document.getElementById('example')
+      );
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+    
+      <section class="" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="react-tools">react-tools</h1>
+<p>Installation</p>
+<pre><code class="hljs sh">npm install -g react-tools</code></pre><p>Watch</p>
+<pre><code class="hljs sh">jsx --watch src/ build/</code></pre>
+          </div>
+        </div>
+      </section>
+    
+      <section class="" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="others">Others</h1>
+<ul>
+<li>browserify with reactify</li>
+<li>react-rails</li>
+</ul>
+
+          </div>
+        </div>
+      </section>
+    
+      <section class="" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="harmony-option">Harmony option</h1>
+<ul>
+<li>Arrow functions</li>
+<li>Classes</li>
+<li>Object method</li>
+<li>Destructuring assignment</li>
+<li>Rest params</li>
+<li>Spread property</li>
+<li>and more</li>
+</ul>
+
+          </div>
+        </div>
+      </section>
+    
+      <section class="" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="react-component">React component</h1>
+<pre><code class="hljs hljs">var Hello = React.createClass({
+  render() {
+    return &lt;div&gt;Hello {this.props.target}&lt;/div&gt;;
+  }
+});
+
+React.render(&lt;Hello target="World" /&gt;, document.body);</code></pre>
+          </div>
+        </div>
+      </section>
+    
+      <section class="" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="react-props">React props</h1>
+<ul>
+<li>Set as the attribute</li>
+<li>Get from <code>this.props</code></li>
+<li>Immutable</li>
+</ul>
+
+          </div>
+        </div>
+      </section>
+    
+      <section class="" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="stateful-component">Stateful component</h1>
+<pre><code class="hljs hljs">var ClickableElement = React.createClass({
+  getInitialState() {
+    return { count: 0 };
+  },
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;h1&gt;Count: {this.state.count}&lt;/h1&gt;
+        &lt;a onClick={this.onClick}&gt;Click!&lt;/a&gt;
+      &lt;/div&gt;
+    );
+  },
+  onClick(e) {
+    this.setState({ count: this.state.count + 1 });
+  }
+});</code></pre>
+          </div>
+        </div>
+      </section>
+    
+      <section class="" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="state">State</h1>
+<ul>
+<li>Refer from <code>this.state</code></li>
+<li>Initial value from <code>getInitialState</code></li>
+<li>Set with <code>this.setState</code></li>
+<li>Rerendered when it is changed</li>
+</ul>
+
+          </div>
+        </div>
+      </section>
+    
+      <section class="" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="lifecycle-methods">Lifecycle Methods</h1>
+<pre><code class="hljs hljs">var TestComponent = React.createClass({
+  // When it is added to DOM
+  componentDidMount() {
+    window.addEventListener('resize', this._onResize);
+  },
+
+  // When it is removed from DOM
+  componentWillUnmount() {
+    window.removeEventListener('resize', this._onResize);
+  },
+
+  _onResize() {
+  }
+});</code></pre>
+          </div>
+        </div>
+      </section>
+    
+      <section class="" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="how-to-define-components">How to define components</h1>
+<div class="sequence" style="position: relative; width: 100%; height: 487px;">
+  <img src="assets/todo_app.png" width="100%" style="position: absolute">
+  <img src="assets/todo1.png" width="100%" style="position: absolute">
+  <img src="assets/todo2.png" width="100%" style="position: absolute">
+  <img src="assets/todo3.png" width="100%" style="position: absolute">
+</div>
+
+
+
+          </div>
+        </div>
+      </section>
+    
+      <section class="" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="defining-components">Defining components</h1>
+<ul>
+<li>Intuitive</li>
+<li>Easy to understand</li>
+<li>Easy to catch up the codes</li>
+</ul>
+
+          </div>
+        </div>
+      </section>
+    
+      <section class=" type-title" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="virtual-dom">Virtual DOM</h1>
+
+          </div>
+        </div>
+      </section>
+    
+      <section class="" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="virtual-dom">Virtual DOM</h1>
+<p>State1</p>
+<pre><code class="hljs html">&lt;div class="bar"&gt;ABC&lt;/div&gt;</code></pre><p>State2</p>
+<pre><code class="hljs html">&lt;div class="bar"&gt;DEF&lt;/div&gt;</code></pre><pre><code class="hljs hljs">document.querySelector('.bar').innerHTML('DEF');</code></pre>
+          </div>
+        </div>
+      </section>
+    
+      <section class="" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="what-is-virtual-dom-">What is Virtual DOM?</h1>
+<ul>
+<li>Virtual JavaScript representation of DOM</li>
+<li>Diff/Patch algorithym</li>
+<li>High performance</li>
+</ul>
+
+          </div>
+        </div>
+      </section>
+    
+      <section class=" type-title" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="data-flow">Data flow</h1>
+
+          </div>
+        </div>
+      </section>
+    
+      <section class="" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="one-way-data-flow">One-way data flow</h1>
+<pre><code class="hljs hljs">var ParentComponent = React.createClass({
+  render(){
+    return (
+      &lt;ChildComponent foo="bar" /&gt;
+    );
+  }
+});
+
+var ChildComponent = React.createClass({
+  render(){
+    return (
+      &lt;div&gt;{ this.props.foo }&lt;/div&gt;
+    );
+  }
+});</code></pre>
+          </div>
+        </div>
+      </section>
+    
+      <section class="" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="one-way-data-flow">One-way data flow</h1>
+<ul>
+<li>Parent to child</li>
+<li>Simple</li>
+</ul>
+
+          </div>
+        </div>
+      </section>
+    
+      <section class=" type-title" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="flux">Flux</h1>
+
+          </div>
+        </div>
+      </section>
+    
+      <section class="" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="flux">Flux</h1>
+<ul>
+<li>Suggested by Facebook</li>
+<li>Application architecture</li>
+<li>Not a framework</li>
+</ul>
+
+          </div>
+        </div>
+      </section>
+    
+      <section class="" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="flux">Flux</h1>
+<p><img src="assets/flux_diagram.png" width="100%"></p>
+
+          </div>
+        </div>
+      </section>
+    
+      <section class="" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <p><img src="assets/one_way_data_flow.jpg" width="100%"></p>
+
+          </div>
+        </div>
+      </section>
+    
+      <section class="" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="view-and-user-interaction">View and user interaction</h1>
+<pre><code class="hljs hljs">var TodoItem = React.createClass({
+  render() {
+    return (
+      &lt;form onSubmit={this.onSubmit}&gt;
+        &lt;input type="text" value={this.state.value} onChange={this.onChange} /&gt;
+        &lt;input type="submit" value="Add Todo" /&gt;
+      &lt;/form&gt;
+    );
+  },
+  onChange(e) {
+    this.setState({value: e.target.value});
+  },
+  onSubmit(e) {
+    e.preventDefault();
+    TodoActions.create(this.state.value);
+  }
+});</code></pre>
+          </div>
+        </div>
+      </section>
+    
+      <section class="" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="actions">Actions</h1>
+<pre><code class="hljs hljs">var TodoActions = {
+  create(text) {
+    AppDispatcher.dispatch({
+      actionType: TodoConstants.TODO_CREATE,
+      text: text
+    });
+  }
+}</code></pre>
+          </div>
+        </div>
+      </section>
+    
+      <section class="" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="store">Store</h1>
+<pre><code class="hljs hljs">
+var TodoStore = assign({}, EventEmitter.prototype, {
+  addTask(text) {
+    this._tasks.push(text);
+  },
+  getAll() {
+    return this._tasks;
+  },
+  emitChange() {
+    this.emit(CHANGE_EVENT);
+  },
+  addChangeListener(callback) {
+    this.on(CHANGE_EVENT, callback);
+  },
+  removeChangeListener(callback) {
+    this.removeListener(CHANGE_EVENT, callback);
+  }
+}
+
+AppDispatcher.register(function(action) {
+  switch(action.actionType) {
+    case TodoConstants.TODO_CREATE:
+      TodoStore.addTask(action.text);
+      TodoStore.emitChange();
+      break;
+  }
+});</code></pre>
+          </div>
+        </div>
+      </section>
+    
+      <section class="" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="view">View</h1>
+<pre><code class="hljs hljs">var TodoApp = React.createClass({
+  componentDidMount() {
+    TodoStore.addChangeListener(this._onChange);
+  },
+
+  componentWillUnmount() {
+    TodoStore.removeChangeListener(this._onChange);
+  },
+
+  _onChange() {
+    this.setState({tasks: TodoStore.getAll() });
+  }
+});</code></pre>
+          </div>
+        </div>
+      </section>
+    
+      <section class="" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="flux">Flux</h1>
+<ul>
+<li>Requires to write a bit more</li>
+<li>Easy to track the codes</li>
+<li>Separation of concerns</li>
+</ul>
+
+          </div>
+        </div>
+      </section>
+    
+      <section class="" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="react-flux">React &amp; Flux</h1>
+<ul>
+<li>Simple</li>
+<li>Easy to understand</li>
+<li>Fun</li>
+</ul>
+
+          </div>
+        </div>
+      </section>
+    
+      <section class=" type-title" style="">
+        <div class="slide">
+          <div class="slide_content">
+            <h1 id="thank-you">Thank you</h1>
+
+          </div>
+        </div>
+      </section>
+    
+  </div>
+  <aside class="controls">
+    <span class="arrow right"></span>
+    <span class="arrow left"></span>
+  </aside>
+  <script src="assets/traceur.js"></script>
+  <script src="assets/harmonide.js"></script>
+  <script src="assets/exe.js"></script>
+  <script>
+    exe.init(function(){
+      var codeElems = document.querySelectorAll('pre code');
+      for(var i = 0, len = codeElems.length; i < len; i++){
+        hljs.highlightBlock(codeElems[i]);
+      }
+    });
+  </script>
+</body>
+</html>
