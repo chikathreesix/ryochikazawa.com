@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Introducing Harmonide | Ryo Chikazawa</title>
+<link rel="stylesheet" href="/assets/screen-08b406674afdaf4ec09ddf71f1dda084.css">
+<link rel="stylesheet" href="/assets/genericons-0244130fd8384bc64dec431c2901e082.css">
+<meta property="og:title" content="Introducing Harmonide | Ryo Chikazawa">
+<meta property="og:site_name" content="Ryo Chikazawa">
+<meta property="og:description" content="JavaScript Samurai">
+
+<link rel="alternate" type="application/atom+xml" title="ryochikazawa.com" href="/feed.xml">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@chikathreesix">
+
+<meta name="twitter:title" content="Introducing Harmonide | Ryo Chikazawa">
+<meta name="twitter:description" content="JavaScript Samurai">
+
+</head>
+<body>
+<div id="drawerMenu">
+  <nav id="drawerNav">
+  <ul class="menuList">
+    
+      <li>
+        <a href="/">Top</a>
+      </li>
+    
+      <li>
+        <a href="/about.html">About</a>
+      </li>
+    
+      <li>
+        <a href="/projects.html">Projects</a>
+      </li>
+    
+      <li>
+        <a href="/slides.html">Slides</a>
+      </li>
+    
+      <li>
+        <a href="http://chikathreesix.com">Japanese blog</a>
+      </li>
+    
+  </ul>
+</nav>
+
+  <div id="drawerTarget">
+    <header class="topHeader">
+  
+    <div class="menuBtn" id="drawerButton">
+      <span class="menuBtn--icon genericon genericon-menu"></span>
+    </div>
+  
+</header>
+
+    
+    <div class="contentBack"></div>
+    
+    <div class="contentFront">
+      
+        <div class="hero">
+  <div class="hero--area">
+    <div class="hero--postContainer">
+      <div class="hero--texts">
+        <h1 class="hero--title">Introducing Harmonide</h1>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="contentMain">
+  <div class="contentMain--container">
+    <div class="socialButtons">
+  <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</div>
+
+    <p>When I got a talk, I am very lazy to prepare slides. I don't want to spend too much time on creating it. So no choice to open neither Keynote nor PowerPoint.</p>
+
+<p>What I wanted was a slide show framework that can be driven by Markdown. Then I found there are some cool frameworks like <a href="http://jdan.github.io/cleaver/">cleaver</a> or <a href="http://remarkjs.com/">remark</a>. They are great frameworks but because I mostly have a talk about JavaScript, one more thing I wanted was to run a JavaScript code on the slide show.</p>
+
+<p>So I finally decided to implement my own framework which is called <a href="http://harmonide.com/">Harmonide</a>.</p>
+
+<h1 id="what-is-harmonide">What is Harmonide?</h1>
+<p>Harmonide is a HTML5 slide show framework for JavaScript hackers that meets these two requirements: compiling from Markdown and running JavaScript codes on it.</p>
+
+<h1 id="getting-started">Getting started</h1>
+<p>Harmonide command is implemented in node.js and available on npm. So first of all, install Harmonide by npm.</p>
+
+<h3 id="install-harmonide">Install Harmonide</h3>
+
+<div class="highlight"><pre><code class="language-sh" data-lang="sh">npm install harmonide</code></pre></div>
+
+<h3 id="generate-slides">Generate slides</h3>
+<p>Once you install Harmonide, now you can use harmonide commands on your terminal.</p>
+
+<p>To compile slides, you can use build command with specifying your markdown file. This will create a <code>build</code> directory that includes a compiled HTML slide.</p>
+
+<div class="highlight"><pre><code class="language-sh" data-lang="sh">harmonide build your-slide.md</code></pre></div>
+
+<h1 id="markdown-format">Markdown format</h1>
+
+<h3 id="define-pages">Define pages</h3>
+<p>Defining pages can be done by inserting 2 lines of  <code>-----</code> in front of the page of the content you are going to define.</p>
+
+<div class="highlight">
+<pre><code>-----
+-----
+# Slide1
+
+-----
+-----
+# Slide2
+</code></pre>
+</div>
+
+<h3 id="options">Options</h3>
+<p>You can change backgournd color of the slide, positions of the texts and so on by setting them either globally or specifically for a slide.</p>
+
+<p>Global options should be specified in the begining of the markdown and options for each slide should be specified in between the 2 lines of <code>-----</code>.</p>
+
+<div class="highlight">
+<pre><code>backgroundColor: white
+
+-----
+backgroundColor: black
+align: middle
+-----
+# Slide1
+
+-----
+-----
+# Slide2
+</code></pre>
+</div>
+
+<h3 id="javascript-codes">JavaScript Codes</h3>
+
+<p>All JavaScript codes written in Github code block format will generate the code block in HTML with a button to run the code.</p>
+
+<div class="highlight">
+<pre><code>-----
+-----
+# Slide1
+
+```js
+console.log('Hello Harmonide!');
+```
+
+- ES6 is also available
+
+```jses6
+var square = (x) =&gt; x * x;
+console.log(square(2));
+```
+</code></pre>
+</div>
+
+<p>The generated block will be like as follows.</p>
+
+<p><img src="/assets/harmonide_js-3eb15103e31f5db813444669615341d0.png" alt="My helpful screenshot" /></p>
+
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+var disqus_shortname = 'ryochikazawa';
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+  </div>
+</div>
+
+      
+    </div>
+  </div>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53136110-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+<script src="/assets/app-8f039f4704fc4d4b54f7ee0d391e0445.js"></script>
+</body>
+</html>
