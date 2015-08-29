@@ -80,7 +80,7 @@
 
     <p>When I got a talk, I am very lazy to prepare slides. I don't want to spend too much time on creating it. So no choice to open neither Keynote nor PowerPoint.</p>
 
-<p>What I wanted was a slide show framework that can be driven by Markdown. Then I found there are some cool frameworks like <a href="http://jdan.github.io/cleaver/">cleaver</a> or <a href="http://remarkjs.com/">remark</a>. They are great frameworks but because I mostly have a talk about JavaScript, one more thing I wanted was to run a JavaScript code on the slide show.</p>
+<p>What I wanted was a slide show framework that can be driven by Markdown. Then I found there are some cool frameworks like <a href="http://jdan.github.io/cleaver/">cleaver</a> or <a href="http://remarkjs.com/">remark</a>. They are great but because I mostly have a talk about JavaScript, one more thing I wanted was to run a JavaScript code on the slide show.</p>
 
 <p>So I finally decided to implement my own framework which is called <a href="http://harmonide.com/">Harmonide</a>.</p>
 
@@ -92,16 +92,18 @@
 
 <h3 id="install-harmonide">Install Harmonide</h3>
 
-<div class="highlight"><pre><code class="language-sh" data-lang="sh">npm install harmonide</code></pre></div>
+<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>npm install harmonide</code></pre></div>
 
 <h3 id="generate-slides">Generate slides</h3>
 <p>Once you install Harmonide, now you can use harmonide commands on your terminal.</p>
 
 <p>To compile slides, you can use build command with specifying your markdown file. This will create a <code>build</code> directory that includes a compiled HTML slide.</p>
 
-<div class="highlight"><pre><code class="language-sh" data-lang="sh">harmonide build your-slide.md</code></pre></div>
+<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>harmonide build your-slide.md</code></pre></div>
 
 <h1 id="markdown-format">Markdown format</h1>
+
+<p>Because you will define pages and set some settings in one single Markdown file, here are few basic Markdown format for Harmonide you might want to remember.</p>
 
 <h3 id="define-pages">Define pages</h3>
 <p>Defining pages can be done by inserting 2 lines of  <code>-----</code> in front of the page of the content you are going to define.</p>
@@ -162,6 +164,12 @@ console.log(square(2));
 <p>The generated block will be like as follows.</p>
 
 <p><img src="/assets/harmonide_js-3eb15103e31f5db813444669615341d0.png" alt="My helpful screenshot" /></p>
+
+<h1 id="contribute-to-harmonide">Contribute to Harmonide</h1>
+
+<p>Harmonide is still under development. Here is the <a href="https://github.com/chikathreesix/harmonide">repository</a> so feel free to <a href="https://github.com/chikathreesix/harmonide/issues">give suggestions</a> or <a href="https://github.com/chikathreesix/harmonide/pulls">send a pull request</a>.</p>
+
+<p>Try Harmonide for your next talk and happy harmoniding!</p>
 
     <div id="disqus_thread"></div>
 <script type="text/javascript">

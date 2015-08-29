@@ -10,7 +10,7 @@
         <title>Introducing Harmonide</title>
         <description>&lt;p&gt;When I got a talk, I am very lazy to prepare slides. I don&#39;t want to spend too much time on creating it. So no choice to open neither Keynote nor PowerPoint.&lt;/p&gt;
 
-&lt;p&gt;What I wanted was a slide show framework that can be driven by Markdown. Then I found there are some cool frameworks like &lt;a href=&quot;http://jdan.github.io/cleaver/&quot;&gt;cleaver&lt;/a&gt; or &lt;a href=&quot;http://remarkjs.com/&quot;&gt;remark&lt;/a&gt;. They are great frameworks but because I mostly have a talk about JavaScript, one more thing I wanted was to run a JavaScript code on the slide show.&lt;/p&gt;
+&lt;p&gt;What I wanted was a slide show framework that can be driven by Markdown. Then I found there are some cool frameworks like &lt;a href=&quot;http://jdan.github.io/cleaver/&quot;&gt;cleaver&lt;/a&gt; or &lt;a href=&quot;http://remarkjs.com/&quot;&gt;remark&lt;/a&gt;. They are great but because I mostly have a talk about JavaScript, one more thing I wanted was to run a JavaScript code on the slide show.&lt;/p&gt;
 
 &lt;p&gt;So I finally decided to implement my own framework which is called &lt;a href=&quot;http://harmonide.com/&quot;&gt;Harmonide&lt;/a&gt;.&lt;/p&gt;
 
@@ -22,16 +22,18 @@
 
 &lt;h3 id=&quot;install-harmonide&quot;&gt;Install Harmonide&lt;/h3&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;npm install harmonide&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;npm install harmonide&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;generate-slides&quot;&gt;Generate slides&lt;/h3&gt;
 &lt;p&gt;Once you install Harmonide, now you can use harmonide commands on your terminal.&lt;/p&gt;
 
 &lt;p&gt;To compile slides, you can use build command with specifying your markdown file. This will create a &lt;code&gt;build&lt;/code&gt; directory that includes a compiled HTML slide.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;harmonide build your-slide.md&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;harmonide build your-slide.md&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;markdown-format&quot;&gt;Markdown format&lt;/h1&gt;
+
+&lt;p&gt;Because you will define pages and set some settings in one single Markdown file, here are few basic Markdown format for Harmonide you might want to remember.&lt;/p&gt;
 
 &lt;h3 id=&quot;define-pages&quot;&gt;Define pages&lt;/h3&gt;
 &lt;p&gt;Defining pages can be done by inserting 2 lines of  &lt;code&gt;-----&lt;/code&gt; in front of the page of the content you are going to define.&lt;/p&gt;
@@ -92,6 +94,12 @@ console.log(square(2));
 &lt;p&gt;The generated block will be like as follows.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/harmonide_js-3eb15103e31f5db813444669615341d0.png&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;contribute-to-harmonide&quot;&gt;Contribute to Harmonide&lt;/h1&gt;
+
+&lt;p&gt;Harmonide is still under development. Here is the &lt;a href=&quot;https://github.com/chikathreesix/harmonide&quot;&gt;repository&lt;/a&gt; so feel free to &lt;a href=&quot;https://github.com/chikathreesix/harmonide/issues&quot;&gt;give suggestions&lt;/a&gt; or &lt;a href=&quot;https://github.com/chikathreesix/harmonide/pulls&quot;&gt;send a pull request&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Try Harmonide for your next talk and happy harmoniding!&lt;/p&gt;
 </description>
         <pubDate>Sun, 23 Aug 2015 00:00:00 +0800</pubDate>
         <link>http://ryochikazawa.com/2015/08/23/introducing-harmonide.html</link>
