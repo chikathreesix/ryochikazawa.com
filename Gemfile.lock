@@ -111,12 +111,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll
-  jekyll-assets
-  jekyll-compass
+  jekyll (~> 2.5.3)
+  jekyll-assets (~> 0.9.0)
+  jekyll-compass (~> 1.0.6)
   jekyll-gh-pages
   rack-jekyll
-  uglifier
+  uglifier (~> 2.5.1)
 
 BUNDLED WITH
    1.11.2
