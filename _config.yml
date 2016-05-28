@@ -8,7 +8,7 @@ description: JavaScript Samurai
 url: http://ryochikazawa.com
 
 paginate: 5
-exclude: ['Gemfile*', 'Rakefile', 'README.md', 'build']
+exclude: ['Gemfile*', 'Rakefile', 'README.md', 'build', 'vendor']
 
 navigations:
   - title: Top
