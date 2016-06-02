@@ -23,9 +23,14 @@
 {% endif %}
 </head>
 <body>
-<script>window.lockiApiDomain='locki.herokuapp.com';window.lockiProjectId=1;</script>
-<script src="http://locki.herokuapp.com/dist/locki.js"></script>
-<link rel="stylesheet" href="http://locki.herokuapp.com/dist/locki.css">
+<script type="text/javascript">
+  window.lockiApiDomain='locki.herokuapp.com'; window.lockiProjectId=1;
+  (function() {
+    var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+    script.src = '//locki.herokuapp.com/dist/locki.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+  })();
+</script>
 
 <div id="drawerMenu">
   {% include navigation.html %}
