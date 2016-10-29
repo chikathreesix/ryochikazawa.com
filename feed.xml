@@ -7,23 +7,6 @@
     <atom:link href="http://ryochikazawa.com/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Locki Test</title>
-        <description>&lt;h1 id=&quot;locki-test&quot;&gt;Locki Test&lt;/h1&gt;
-
-&lt;p&gt;Locki is the easiest way to localize your website contents.Locki is the translation middleware that enables your visitors to translate your website.&lt;/p&gt;
-
-&lt;div&gt;&lt;div&gt;I am from Tokyo&lt;/div&gt;, Japan, living in San Francisco now for &lt;span&gt;work&lt;/span&gt;. I love to &lt;em&gt;cook&lt;/em&gt; especially &lt;strong&gt;Ramen&lt;/strong&gt;. Jump to &lt;a href=&quot;/&quot;&gt;my &lt;em&gt;homepage&lt;/em&gt;&lt;/a&gt;!&lt;/div&gt;
-
-&lt;p&gt;This is &lt;a href=&quot;http://github.com/chikathreesix&quot; target=&quot;_blank&quot;&gt;my &lt;em&gt;portfolio&lt;/em&gt;&lt;/a&gt;. And this is my &lt;em&gt;Ramen&lt;/em&gt; &lt;strong&gt;Photos&lt;/strong&gt;&lt;div&gt;Go to my special website&lt;/div&gt;&lt;a href=&quot;#&quot;&gt;&lt;div&gt;&lt;span&gt;Hogehoge&lt;/span&gt;&lt;span&gt;Fugafuga&lt;/span&gt;&lt;em&gt;hgohgoe&lt;/em&gt;&lt;strong&gt;GO&lt;/strong&gt;&lt;/div&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;div&gt;Hoge &lt;div&gt;Test&lt;a&gt;Link &lt;span&gt;to&lt;/span&gt;&lt;em&gt;this&lt;/em&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
-</description>
-        <pubDate>Fri, 01 Jul 2016 00:00:00 +0900</pubDate>
-        <link>http://ryochikazawa.com/2016/07/01/test.html</link>
-        <guid isPermaLink="true">http://ryochikazawa.com/2016/07/01/test.html</guid>
-      </item>
-    
-      <item>
         <title>Introducing Harmonide</title>
         <description>&lt;p&gt;When I got a talk, I am very lazy to prepare slides. I don&#39;t want to spend too much time on creating it. So no choice to open neither Keynote nor PowerPoint.&lt;/p&gt;
 
