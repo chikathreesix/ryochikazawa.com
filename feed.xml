@@ -7,6 +7,23 @@
     <atom:link href="http://ryochikazawa.com/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Locki Test</title>
+        <description>&lt;h1 id=&quot;locki-test&quot;&gt;Locki Test&lt;/h1&gt;
+
+&lt;p&gt;Locki is the easiest way to localize your website contents.Locki is the translation middleware that enables your visitors to translate your website.&lt;/p&gt;
+
+&lt;div&gt;&lt;div&gt;I am from Tokyo&lt;/div&gt;, Japan, living in San Francisco now for &lt;span&gt;work&lt;/span&gt;. I love to &lt;em&gt;cook&lt;/em&gt; especially &lt;strong&gt;Ramen&lt;/strong&gt;. Jump to &lt;a href=&quot;/&quot;&gt;my &lt;em&gt;homepage&lt;/em&gt;&lt;/a&gt;!&lt;/div&gt;
+
+&lt;p&gt;This is &lt;a href=&quot;http://github.com/chikathreesix&quot; target=&quot;_blank&quot;&gt;my &lt;em&gt;portfolio&lt;/em&gt;&lt;/a&gt;. And this is my &lt;em&gt;Ramen&lt;/em&gt; &lt;strong&gt;Photos&lt;/strong&gt;&lt;div&gt;Go to my special website&lt;/div&gt;&lt;a href=&quot;#&quot;&gt;&lt;div&gt;&lt;span&gt;Hogehoge&lt;/span&gt;&lt;span&gt;Fugafuga&lt;/span&gt;&lt;em&gt;hgohgoe&lt;/em&gt;&lt;strong&gt;GO&lt;/strong&gt;&lt;/div&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;div&gt;Hoge &lt;div&gt;Test&lt;a&gt;Link &lt;span&gt;to&lt;/span&gt;&lt;em&gt;this&lt;/em&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Fri, 01 Jul 2016 00:00:00 +0900</pubDate>
+        <link>http://ryochikazawa.com/2016/07/01/test.html</link>
+        <guid isPermaLink="true">http://ryochikazawa.com/2016/07/01/test.html</guid>
+      </item>
+    
+      <item>
         <title>Introducing Harmonide</title>
         <description>&lt;p&gt;When I got a talk, I am very lazy to prepare slides. I don&#39;t want to spend too much time on creating it. So no choice to open neither Keynote nor PowerPoint.&lt;/p&gt;
 
@@ -101,7 +118,7 @@ console.log(square(2));
 
 &lt;p&gt;Try Harmonide for your next talk and happy harmoniding!&lt;/p&gt;
 </description>
-        <pubDate>Sun, 23 Aug 2015 00:00:00 +0800</pubDate>
+        <pubDate>Sun, 23 Aug 2015 00:00:00 +0900</pubDate>
         <link>http://ryochikazawa.com/2015/08/23/introducing-harmonide.html</link>
         <guid isPermaLink="true">http://ryochikazawa.com/2015/08/23/introducing-harmonide.html</guid>
       </item>
@@ -137,7 +154,7 @@ npm install browserify --save&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;It should work now.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 30 Jan 2015 00:00:00 +0800</pubDate>
+        <pubDate>Fri, 30 Jan 2015 00:00:00 +0900</pubDate>
         <link>http://ryochikazawa.com/2015/01/30/heroku-with-browserify-rails.html</link>
         <guid isPermaLink="true">http://ryochikazawa.com/2015/01/30/heroku-with-browserify-rails.html</guid>
       </item>
@@ -154,11 +171,11 @@ npm install browserify --save&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;iframe width=&quot;100%&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/TZ8VVEQEQ0M&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
-&lt;p&gt;By the way, because I wanted to write the slides with markdown and also build it with ES6, I built the presentation framework from scratch. &lt;/p&gt;
+&lt;p&gt;By the way, because I wanted to write the slides with markdown and also build it with ES6, I built the presentation framework from scratch.&lt;/p&gt;
 
 &lt;p&gt;This is called &lt;a href=&quot;https://github.com/chikathreesix/harmonide&quot;&gt;Harmonide&lt;/a&gt;. You can also run a javascript code in the slides as you can see in the slide or the video above. It is with MIT license so feel free to use, fork and also like it!&lt;/p&gt;
 </description>
-        <pubDate>Tue, 18 Nov 2014 00:00:00 +0800</pubDate>
+        <pubDate>Tue, 18 Nov 2014 00:00:00 +0900</pubDate>
         <link>http://ryochikazawa.com/2014/11/18/had-a-talk-in-geekcampsg.html</link>
         <guid isPermaLink="true">http://ryochikazawa.com/2014/11/18/had-a-talk-in-geekcampsg.html</guid>
       </item>
@@ -173,7 +190,7 @@ npm install browserify --save&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;I will write about mainly HTML5, JavaScript and Ruby in this blog. If you have any comments, feel free to send me a metion on Twitter.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 21 Jul 2014 00:00:00 +0800</pubDate>
+        <pubDate>Mon, 21 Jul 2014 00:00:00 +0900</pubDate>
         <link>http://ryochikazawa.com/2014/07/21/starting-english-blog.html</link>
         <guid isPermaLink="true">http://ryochikazawa.com/2014/07/21/starting-english-blog.html</guid>
       </item>
